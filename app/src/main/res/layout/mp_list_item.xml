@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/postImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@color/design_default_color_primary" />
+
+    <TextView
+        android:id="@+id/postTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@id/postImage"
+        android:maxLines="2"
+        android:textStyle="bold"
+        android:text="Just a Title for post not, people can do more"
+        android:textColor="@color/black"
+        android:ellipsize="end"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/postContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/postTitle"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@id/postImage"
+        android:maxLines="1"
+        android:text="Content of post."
+        android:ellipsize="end"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/postSource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@id/postImage"
+        android:maxLines="1"
+        android:text="Source"
+        android:gravity="bottom"
+        android:layout_below="@id/postContent"
+        android:textColor="@color/purple_700"
+        android:layout_marginTop="6dp"
+        android:layout_alignBottom="@id/postImage"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/postDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/postSource"
+        android:maxLines="1"
+        android:text="date"
+        android:gravity="end|bottom"
+        android:layout_below="@id/postContent"
+        android:textColor="@color/cardview_shadow_start_color"
+        android:layout_marginTop="6dp"
+        android:layout_alignBottom="@id/postImage"
+        android:textSize="16sp"
+        android:layout_alignParentEnd="true"
+        />
+</RelativeLayout>
